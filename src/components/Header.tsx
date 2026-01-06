@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/garuland-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-3">
         <nav className="flex items-center justify-between">
-          <a href="#home" className="font-display text-xl md:text-2xl font-semibold text-primary">
-            Garuland Enterprises
+          <a href="#home" className="flex items-center">
+            <img src={logo} alt="Garuland Enterprises" className="h-12 md:h-14 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
